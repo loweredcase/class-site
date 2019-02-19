@@ -1,0 +1,67 @@
+<!--this is a starter kit of HTML & CSS for demo #3-->
+
+
+<! DOCTYPE html>
+<html>
+    
+<head>
+    
+    <link rel="stylesheet" type="text/css" href="demo3_styleSheet.css">
+
+    <title>Demo #3 Starter-Kit</title>
+    
+</head>
+
+
+    
+<body>
+    <div class="wrapper">
+    
+        <p class="paragraph" id="box-model"><span class="key-word">The Box Model</span> The box model visually explains how all content, all elements in HTML, are sized and positioned. This includes aspects like the content’s padding, border, and margin—these all add to an elements appearance and size. Any element can have any of these aspects applied, so the box model can apply to every HTML element if you so choose. Padding, border, and margin all affect an elements final size and appearance.</p>
+
+        <p class="paragraph" id="inline-block"><span class="key-word">Inline VS. Block</span> All elements in HTML have a default way in which they appear which is either inline, or block. Links, images, and spans are all examples of elements which default to being inline. Just because elements default to one of these or another, does not mean you can’t change them. You can change any the display of any HTML element by setting it’s display property to either: display: block; or display: inline;.
+
+        Inline elements only take up as much space as they need, and they are perfectly happy letting other elements sit right next to them. For inline elements, you can try specifying a width or height within your CSS, however it will not do anything. Likewise, defining margin’s for these elements will be ignored. Border and padding for inline elements will be observed by the browser graphically, but they will not affect the overall layout of elements. 
+
+        In order to make use of the box model, your elements will need to be block display. Block elements will take up space for themselves, and they will not let other elements sit next to them. Headings, paragraphs, and divs are examples of elements which default to block display.</p>
+
+
+        <p class="paragraph" id="positioning"><span class="key-word">Positioning</span> There are essentially two strategies related to arranging elements on a page; positioning and floats. Positioning is typically used to offset an element without disturbing or repositioning elements around it. The position property in CSS has four potential properties: static, relative, absolute, and fixed. 
+
+        The static property will display elements with their defaults. 
+
+        The relative property will shift an element relative to it’s default position without affecting content around it. 
+
+        The absolute property will remove it from the flow of the document and the surrounding content will reshuffle and pretend like that relative element was never there in the first place. The absolutely positioned element will position itself based on the first parent element which has position relative applied. If none of it’s parent elements have position relative applied, then the element will position itself relative to the browser window.
+
+        The fixed positioning property will also remove an element from the flow of the document and places it relative to the browser window. The difference between absolute positioning, and fixed positioning, is that fixed positioning always places an element relative to the browser window. For example, a fixed positioned element will remain, in the same place on the browser window, even when you scroll—it will not scroll with the content but will remain fixed on the screen. </p>
+
+
+        <p class="paragraph" id="floats"><span class="key-word">Floats</span> There are essentially two strategies related to arranging elements on a page; positioning and floats. While positioning is good to offset elements without disturbing their neighbors, more than likely you will use float to position elements in your designs. The float property has three potential values: left, right, and none.
+
+        Setting float: left; will float an element to the left and will reflow all the content around it. Setting float: right; will do the same, but to the right. Setting float: none; will trigger the default for elements. 
+
+        When child elements with a parent element are floated, the parent element will collapse unless you implement a “clear float” within your code. There are three basic ways to clear a float.
+
+        The first way is to add an empty div to your HTML with a css rule of clear both: div style=“clear:both”. This is not advised as you are adding to your HTML something intended to control style—i.e. it should be in your CSS.
+
+        The second way is to set the parents overflow property to hidden or auto within your CSS: .parent {overflow: hidden;} or .parent {overflow: auto;}. This carries the potential to inadvertently clip, or crop, content or end up with unwanted scrollbars if the content is taller or wider than the hight or width you set.
+
+        The third way is to use the after pseudo class. You can create a CSS rule with the parent element colon after, and give it the following properties: .parent:after {display: block; clear: both; content: “”; height: 0; overflow: hidden;}. This will insert some content with the property of clear both, but from your CSS not HTML as in first option. Thus clearing your floats and restoring you parent element without adding styling into your HTML.</p>
+
+
+        <p class="paragraph" id="fixed-fluid"><span class="key-word">Fixed VS. Fluid</span> Fixed layouts are simple to consider and make. No mater how a browser window is resized, and no matter the device used to view the webpage, the width of the layout stays the same.  Creating fixed layouts is simple; you use absolute measurements when prescribing the positioning and display of elements. 
+
+        Fixed layouts are not as relevant as fluid layouts in today’s world. Fluid layouts use relative measurements like percentages and ems to determine elements size and relationships to one another. This allows the design to adapt to it’s environment, no matter the device used or the browser window’s size. The only way for a designer to optimize their designs for these dynamic displays is for the design to become responsive to the context in which it appears. </p>
+    
+    </div>
+    
+    
+</body>
+
+
+
+
+
+
+</html>

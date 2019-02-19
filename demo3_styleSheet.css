@@ -1,0 +1,45 @@
+/* this is a starter kit of HTML & CSS for demo #3 */
+
+
+/* keep element css up top */
+
+
+
+/* next define class styling */
+
+.wrapper {
+    background-color: darkgray; 
+    margin: 4% auto;
+    padding: 20px;
+    width: 90%;
+}
+
+.paragraph{
+    margin: 0;
+}
+
+
+/* next define id styling */
+
+#box-model {
+    background-color: white;
+}
+
+#inline-block {
+    background-color: beige;
+}
+
+#positioning {
+    background-color: antiquewhite;
+}
+
+
+#floats {
+    background-color: bisque;
+}
+
+
+#fixed-fluid {
+    background-color: burlywood
+    
+}
